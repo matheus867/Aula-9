@@ -1,0 +1,11 @@
+-- Cria o banco de dados se não existir
+CREATE DATABASE IF NOT EXISTS todo_app;
+
+-- Seleciona o banco de dados
+USE todo_app;
+
+-- Cria a tabela se não existir
+CREATE TABLE IF NOT EXISTS tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    description VARCHAR(255) NOT NULL
+);
